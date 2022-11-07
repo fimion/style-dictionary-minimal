@@ -1,0 +1,17 @@
+
+/**
+ * Do not edit directly
+ * Generated on Mon, 07 Nov 2022 19:26:52 GMT
+ */
+
+$colors-red: #FF0000 !default;
+$colors-blue: #0000FF !default;
+$colors-green: #00FF00 !default;
+
+$tokens: (
+  'colors': (
+    'red': $colors-red,
+    'blue': $colors-blue,
+    'green': $colors-green
+  )
+);

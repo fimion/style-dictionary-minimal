@@ -1,0 +1,13 @@
+{
+  "colors": {
+    "red": {
+      "value": "#FF0000"
+    },
+    "blue": {
+      "value": "#0000FF"
+    },
+    "green": {
+      "value": "#00FF00"
+    }
+  }
+}

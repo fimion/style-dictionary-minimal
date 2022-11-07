@@ -1,0 +1,23 @@
+{
+  "name": "style-dictionary-minimal",
+  "version": "1.0.0",
+  "description": "A minimal example using style dictionary",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:tokens": "style-dictionary build --config config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fimion/style-dictionary-minimal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fimion/style-dictionary-minimal/issues"
+  },
+  "homepage": "https://github.com/fimion/style-dictionary-minimal#readme",
+  "dependencies": {
+    "style-dictionary": "^3.7.1"
+  }
+}

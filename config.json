@@ -1,0 +1,26 @@
+{
+  "source": ["tokens/**/*.json"],
+  "platforms": {
+    "scss": {
+      "transformGroup": "scss",
+      "buildPath": "build/",
+      "files": [{
+        "destination": "_vars.scss",
+        "format": "scss/map-deep"
+      }]
+    },
+    "json": {
+      "transforms": [
+        "attribute/cti", 
+        "name/cti/pascal", 
+        "color/hex", 
+        "size/rem"
+      ],
+      "buildPath": "build/",
+      "files": [{
+        "destination": "tokens.json",
+        "format": "json/nested"
+      }]
+    }
+  }
+}
