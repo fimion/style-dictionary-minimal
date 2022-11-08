@@ -1,13 +1,23 @@
 {
   "colors": {
-    "red": {
-      "value": "#FF0000"
-    },
-    "blue": {
-      "value": "#0000FF"
-    },
-    "green": {
-      "value": "#00FF00"
-    }
+    "black": { "value": "#000000" },
+    "traina-purple-400": {  "value": "#8875e2" },
+    "traina-purple-300": { "value": "#A897F8" },
+    "traina-pink-400": { "value": "#DE706F" },
+    "traina-pink-300": { "value": "#F98989" },
+    "traina-green-400": { "value": "#5D9E70" },
+    "traina-green-300": { "value": "#82C596" },
+    "traina-gray-900": { "value": "#151515" },
+    "traina-gray-800": { "value": "#232323" },
+    "traina-gray-700": { "value": "#454545" },
+    "traina-gray-600": { "value": "#636363" },
+    "traina-gray-500": { "value": "#727272" },
+    "traina-gray-400": { "value": "#8e8e8e" },
+    "traina-gray-300": { "value": "#D0D0D0" },
+    "traina-gray-200": { "value": "#e8e8e8" },
+    "traina-gray-110": { "value": "#f5f5f5" },
+    "traina-gray-100": { "value": "#fafafa" },
+    "white": { "value": "#ffffff" },
+    "error-red": { "value": "#852323" }
   }
 }

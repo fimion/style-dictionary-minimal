@@ -1,17 +1,49 @@
 
 /**
  * Do not edit directly
- * Generated on Mon, 07 Nov 2022 19:26:52 GMT
+ * Generated on Tue, 08 Nov 2022 20:02:50 GMT
  */
 
-$colors-red: #FF0000 !default;
-$colors-blue: #0000FF !default;
-$colors-green: #00FF00 !default;
+$colors-black: #000000 !default;
+$colors-traina-purple-400: #8875e2 !default;
+$colors-traina-purple-300: #A897F8 !default;
+$colors-traina-pink-400: #DE706F !default;
+$colors-traina-pink-300: #F98989 !default;
+$colors-traina-green-400: #5D9E70 !default;
+$colors-traina-green-300: #82C596 !default;
+$colors-traina-gray-900: #151515 !default;
+$colors-traina-gray-800: #232323 !default;
+$colors-traina-gray-700: #454545 !default;
+$colors-traina-gray-600: #636363 !default;
+$colors-traina-gray-500: #727272 !default;
+$colors-traina-gray-400: #8e8e8e !default;
+$colors-traina-gray-300: #D0D0D0 !default;
+$colors-traina-gray-200: #e8e8e8 !default;
+$colors-traina-gray-110: #f5f5f5 !default;
+$colors-traina-gray-100: #fafafa !default;
+$colors-white: #ffffff !default;
+$colors-error-red: #852323 !default;
 
 $tokens: (
   'colors': (
-    'red': $colors-red,
-    'blue': $colors-blue,
-    'green': $colors-green
+    'black': $colors-black,
+    'traina-purple-400': $colors-traina-purple-400,
+    'traina-purple-300': $colors-traina-purple-300,
+    'traina-pink-400': $colors-traina-pink-400,
+    'traina-pink-300': $colors-traina-pink-300,
+    'traina-green-400': $colors-traina-green-400,
+    'traina-green-300': $colors-traina-green-300,
+    'traina-gray-900': $colors-traina-gray-900,
+    'traina-gray-800': $colors-traina-gray-800,
+    'traina-gray-700': $colors-traina-gray-700,
+    'traina-gray-600': $colors-traina-gray-600,
+    'traina-gray-500': $colors-traina-gray-500,
+    'traina-gray-400': $colors-traina-gray-400,
+    'traina-gray-300': $colors-traina-gray-300,
+    'traina-gray-200': $colors-traina-gray-200,
+    'traina-gray-110': $colors-traina-gray-110,
+    'traina-gray-100': $colors-traina-gray-100,
+    'white': $colors-white,
+    'error-red': $colors-error-red
   )
 );
