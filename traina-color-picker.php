@@ -22,7 +22,10 @@ function tcp_return_design_tokens()
         return $__DESIGN_TOKENS;
     }
     $plugin_dir = WP_PLUGIN_DIR . '/traina-color-picker';
-    $__DESIGN_TOKENS = json_decode(file_get_contents($plugin_dir . '/build/tokens.json'), true);
+    $__DESIGN_TOKENS = json_decode(
+        file_get_contents($plugin_dir . '/build/tokens.json'), 
+        true
+    );
     return $__DESIGN_TOKENS;
 }
 
@@ -36,17 +39,20 @@ function tcp_change_gutenberg_color_palette()
     $color_palette = [];
 
     foreach ($design_tokens['colors'] as $color_slug => $color_hex){
-        $color_name = trim(ucwords(str_replace('-', ' ', $color_slug)));
-            $color_palette[] = [
-                'name' => $color_name,
-                'slug' => $color_slug,
-                'color' => $color_hex
-            ];
-        }
+        $color_name = trim(
+            ucwords(
+                str_replace('-', ' ', $color_slug)
+            )
+        );
+        $color_palette[] = [
+            'name' => $color_name,
+            'slug' => $color_slug,
+            'color' => $color_hex
+        ];
+    }
 
     if ($color_palette) {
         add_theme_support('editor-color-palette', $color_palette); 
     }
 }
-
-add_action('after_setup_theme', 'change_gutenberg_color_palette');
+add_action('after_setup_theme', 'tcp_change_gutenberg_color_palette');
