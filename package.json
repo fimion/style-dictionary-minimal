@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build:tokens && sass ./main.scss ./build/main.css",
     "build:tokens": "style-dictionary build --config config.json"
   },
   "repository": {
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/fimion/style-dictionary-minimal#readme",
   "dependencies": {
+    "sass": "^1.56.0",
     "style-dictionary": "^3.7.1"
   }
 }

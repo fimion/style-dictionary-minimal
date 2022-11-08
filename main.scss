@@ -1,0 +1,9 @@
+@use "./build/vars" as v;
+@use "sass:map";
+
+
+@each $name, $color in map.get(v.$tokens,colors){
+    .has-#{$name}-color{
+        color: #{$color};
+    }
+}

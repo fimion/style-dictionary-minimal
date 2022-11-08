@@ -56,3 +56,11 @@ function tcp_change_gutenberg_color_palette()
     }
 }
 add_action('after_setup_theme', 'tcp_change_gutenberg_color_palette');
+
+function tcp_enqueue_styles(){
+    $plugin_dir = WP_PLUGIN_DIR . '/traina-color-picker';
+    wp_enqueue_style('tcp_styles', $plugin_dir . "/build/main.css");
+}
+
+add_action('init', 'tcp_enqueue_styles');
+add_action('admin_init', 'tcp_enqueue_styles');
