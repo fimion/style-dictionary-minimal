@@ -62,4 +62,4 @@ function tcp_enqueue_styles(){
 }
 
 add_action('init', 'tcp_enqueue_styles');
-add_action('admin_init', 'tcp_enqueue_styles');
+add_action('admin_enqueue_scripts', 'tcp_enqueue_styles');
