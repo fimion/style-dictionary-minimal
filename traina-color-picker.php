@@ -13,20 +13,20 @@ Author URI: https://wearetraina.com
 */
 
 // Set this once here, so we can cache this value for later.
-$__DESIGN_TOKENS = null;
+$__TCP_DESIGN_TOKENS = null;
 
 function tcp_return_design_tokens()
 {
-    global $__DESIGN_TOKENS;
-    if (!is_null($__DESIGN_TOKENS)) {
-        return $__DESIGN_TOKENS;
+    global $__TCP_DESIGN_TOKENS;
+    if (!is_null($__TCP_DESIGN_TOKENS)) {
+        return $__TCP_DESIGN_TOKENS;
     }
     $plugin_dir = WP_PLUGIN_DIR . '/traina-color-picker';
-    $__DESIGN_TOKENS = json_decode(
+    $__TCP_DESIGN_TOKENS = json_decode(
         file_get_contents($plugin_dir . '/build/tokens.json'), 
         true
     );
-    return $__DESIGN_TOKENS;
+    return $__TCP_DESIGN_TOKENS;
 }
 
 
